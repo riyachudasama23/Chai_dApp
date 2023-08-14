@@ -4,8 +4,8 @@ async function main() {
   const Chai = await hre.ethers.getContractFactory("chai"); //fetching ABI & bytecode
   const chai = await Chai.deploy(); //creating an instance of our smart contract
   
-  await chai.deployed(); //deploying your smart contract
-
+  //await chai.deployTransaction.wait();//await chai.deployed(); //deploying your smart contract
+  await chai.deployed();
   console.log("Deployed contract address: ",`${chai.address}`);
 }
 
