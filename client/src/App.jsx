@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=>{                         //automatically fetch contract instance , don't heve to click any button
     const template=async()=>{
-      const contractAddress="";
+      const contractAddress="0x232eeD1243678750E945783c3A87065E4463b5Ea";
       const contractABI="";
 
       /*
